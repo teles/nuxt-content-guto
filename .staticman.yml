@@ -1,0 +1,6 @@
+allowedFields: ['name', 'email', 'comment'] # Campos permitidos no formulário de contribuição
+branch: 'master' # Nome da branch onde as contribuições serão adicionadas
+commitMessage: 'Novo comentário de {{fields.name}}' # Mensagem de commit para as contribuições
+filename: 'comments/{{ fields.slug }}-{{ fields.timestamp }}' # Caminho e formato do nome do arquivo para as contribuições
+format: 'yaml' # Formato dos arquivos de contribuição
+moderation: true # Ativar moderação para revisar contribuições antes de serem publicadas
